@@ -1,0 +1,45 @@
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+ 
+td {
+    padding: 15px;
+}
+body{
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+}
+
+h2 {
+	color: #111111;
+}
+
+th{
+    padding: 15px;
+    color: #FF0000;
+    
+}
+
+input[type=text] {
+    padding: 0;
+    height: 20px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1.5px solid #cdcdcd;
+    border-color: rgba(0,255,0,.15);
+    background-color: lightgreen;
+    font-size: 14px;
+}
+
+.advancedSearchTextbox {
+    width: 300px;
+    margin-right: -4px;
+}

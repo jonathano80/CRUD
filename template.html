@@ -1,0 +1,62 @@
+<html lang="en">
+   <head>
+      <link rel='stylesheet' href='styles.css'>
+      <title>CRUD template</title>
+   </head>
+   <body style="background-color:lightgreen;">
+         <script>
+function javaScript() {
+   alert('Searching Database Now')
+}
+         </script>
+      
+      <center>
+        
+         <img src="SHOE_LOGO.jpeg" border="50px" 
+               width="400px" height="220px" >
+      </center>
+      <br>
+      <br>
+      <center>
+         <form action='create.php' method = 'post'><!--needed to send info to php file !-->
+            <input type='text' placeholder='Color' name='lastName' style="advancedSearchTextBox">
+            <select id='select' name='style'>
+                 <option value="NMD" >NMD</option>
+                 <option value="Ultra Boost" >Ultra Boost</option>
+                 <option value="Tubular" >Tubular</option>
+                 <option value="Primeknit" >Primeknit</option>
+                 <option value="Other" >Other</option>
+            </select>
+           <select id='select' name='size'>
+                 <option value="6" >6</option>
+                 <option value="7" >7</option>
+                 <option value="8" >8</option>
+                 <option value="9" >9</option>
+                 <option value="10" >10</option>
+                 <option value="11" >11</option>
+                 <option value="12" >12</option>
+                 <option value="13" >13</option>
+                 <option value="14" >14</option>
+            </select>
+            
+            <input name = 'create' type = 'submit' value = 'Submit Shoe'>
+			 <!-- 
+           <input name = 'update' type = 'submit' value = 'Update Info'>  
+           <input name = 'del'    type = 'submit' value = 'Delete Info'>!-->
+         </form>
+         Find results for each shoe style
+         <form action= 'read.php' method = 'post'>
+            <select id='select' name='style'>
+               <option value="NMD" >NMD</option>
+               <option value="Ultra Boost" >Ultra Boost</option>
+               <option value="Tubular" >Tubular</option>
+               <option value="Primeknit" >Primeknit</option>
+               <option value="Other" >Other</option>
+             
+            </select>
+               <p></p>
+            <input name = 'read'   type = 'submit' value = 'Submit Brand' onclick="javaScript()">
+         </form>
+      </center>
+   </body>
+</html>
